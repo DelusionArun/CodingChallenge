@@ -41,11 +41,21 @@ public class EvaluationService {
 
     private List<TestCase> createTestCases() {
         List<TestCase> testCases = new ArrayList<>();
-        testCases.add(new TestCase(new int[] {1,2,3,0,2})); // 3
-        testCases.add(new TestCase(new int[] {3,1,6,1,2,4})); // 7
-        testCases.add(new TestCase(new int[] {1})); // 0
-        testCases.add(new TestCase(new int[] {143,144,145,1,899,900})); // 900
-        testCases.add(new TestCase(new int[] {500,600,700,1,4,10,201,203})); //399
+        TestCase testCase1 = new TestCase();
+        TestCase testCase2 = new TestCase();
+        TestCase testCase3 = new TestCase();
+        TestCase testCase4 = new TestCase();
+        TestCase testCase5 = new TestCase();
+        testCase1.setHunts(new int[] {1,2,3,0,2});
+        testCase2.setHunts(new int[] {3,1,6,1,2,4});
+        testCase3.setHunts(new int[] {1});
+        testCase4.setHunts(new int[] {143,144,145,1,899,900});
+        testCase5.setHunts(new int[] {500,600,700,1,4,10,201,203});
+        testCases.add(testCase1); // 3
+        testCases.add(testCase2); // 7
+        testCases.add(testCase3); // 0
+        testCases.add(testCase4); // 900
+        testCases.add(testCase5); //399
 
         return testCases;
     }
@@ -179,8 +189,9 @@ public class EvaluationService {
         };
 
         int efficientHuntCount = huntArray[numOfHunts-1][1];
-
-        return new TeamSolution(efficientHuntCount);
+        TeamSolution teamSolutions = new TeamSolution();
+        teamSolutions.setValue(efficientHuntCount);
+        return teamSolutions;
     }
 
     private List<TeamSolution> mockResponseFromTeamServer() {
