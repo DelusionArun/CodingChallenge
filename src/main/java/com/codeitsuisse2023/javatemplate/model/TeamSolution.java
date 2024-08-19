@@ -5,13 +5,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 // TODO: change this class based on expected JSON payload received from participant teams
 public class TeamSolution {
     @JsonProperty("value")
-    private int value;
+    private long value;
 
-    public int getValue() {
+    public long getValue() {
         return value;
     }
 
-    public void setValue(int value) {
+    public void setValue(long value) {
         this.value = value;
     }
 

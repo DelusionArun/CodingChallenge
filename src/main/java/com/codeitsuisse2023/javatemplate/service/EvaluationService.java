@@ -188,7 +188,7 @@ public class EvaluationService {
             huntArray[i][2] = huntArray[i - 1][1];
         };
 
-        int efficientHuntCount = huntArray[numOfHunts-1][1];
+        long efficientHuntCount = huntArray[numOfHunts-1][1];
         TeamSolution teamSolutions = new TeamSolution();
         teamSolutions.setValue(efficientHuntCount);
         return teamSolutions;
