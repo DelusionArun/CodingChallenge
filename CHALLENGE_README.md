@@ -70,7 +70,7 @@ Which would lead his to defeat 4 monsters at the cost of missing one, leading to
 
 ### Submission Method
 
-Expose a `POST` endpoint `/monster-hunter` for verification
+Expose a `POST` endpoint `/efficient-hunter-kazuma` for verification
 
 Expected request mime-type: `application/json`
 
