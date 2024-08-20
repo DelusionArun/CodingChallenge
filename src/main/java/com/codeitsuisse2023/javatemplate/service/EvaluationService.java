@@ -24,7 +24,7 @@ import static org.springframework.web.util.UriComponentsBuilder.fromHttpUrl;
 @Service
 public class EvaluationService {
     // TODO: update token
-    private final String TOKEN = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiZXhwIjoyNjgyMjQyODgwfQ.Ujp3Y3lijJqKSyptccB_lWsBLWyVn0jULrzft9G273gLrrKXs-QtMWM21H0gFg_NY76IAPT1kUj4J6aaHK7aZw";
+    private final String TOKEN = "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJjb2RlaXRzdWlzc2UyMDIyQGdtYWlsLmNvbSIsImV4cCI6MTczMDMwNDAwMH0.trNElwseK8QUiYli1kqqs5vJj4Kits4aCrVeIyBxPFwwLqhnegejYJhYQeCrETtrzq_JpIE1dvCMfvrRI5sHTA";
 
     // TODO: update challenge path
     private final String CHALLENGE_PATH = "efficient-hunter-kazuma";
