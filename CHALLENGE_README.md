@@ -145,4 +145,4 @@ Expected Output:
 
 ### Finally...
 
-####          ( • ̀ω•́ )✧ We Wish You Luck On Your Quest To Your Grand Adventure, Adventurer Of The Other World! ⸜(｡˃ ᵕ ˂)⸝♡ 
+####          ( • ̀ω•́ )✧ We Wish You Luck On Your Quest To Your Grand Adventure, Adventurer! ⸜(｡˃ ᵕ ˂)⸝♡ 
