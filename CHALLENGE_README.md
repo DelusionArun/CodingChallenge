@@ -143,4 +143,6 @@ Expected Output:
 5. Once he uses attack, all the monsters at that time will be defeated. 
 6. Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to recover MP and attack.
 
-### ( • ̀ω•́ )✧ Have a Great Adventure! ⸜(｡˃ ᵕ ˂)⸝♡ 
+### Finally...
+
+####          ( • ̀ω•́ )✧ We Wish You Luck On Your Quest To Your Grand Adventure! ⸜(｡˃ ᵕ ˂)⸝♡ 
