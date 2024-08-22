@@ -111,6 +111,9 @@ Monster Number
 [
     {
       "monsters": [1]
+    },
+    {
+      "monsters": [1,100,340,210,1,4,530]
     }
 ]
 </pre>
@@ -121,28 +124,7 @@ Monster Number
 [
     {
         "efficiency": 0
-    }
-]
-</pre>
-
-#### Expected Input Sample 3
-
-Every test case will have the following format:
-
-Monster Number
-
-<pre>
-[
-    {
-      "monsters": [1,100,340,210,1,4,530]
-    }
-]
-</pre>
-
-#### Expected Output Sample 3
-
-<pre>
-[
+    },
     {
         "efficiency": 868
     }

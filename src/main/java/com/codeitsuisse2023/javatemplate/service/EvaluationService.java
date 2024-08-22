@@ -30,7 +30,7 @@ public class EvaluationService {
     private final String CHALLENGE_PATH = "efficient-hunter-kazuma";
     private final long CONNECT_TIMEOUT_DURATION = 10L;
     private final long READ_TIMEOUT_DURATION = 5L;
-    private final Integer[] TEST_CASE_SCORES = new Integer[] { 10, 15, 20, 25, 30 }; // sum up to 100
+    private final Integer[] TEST_CASE_SCORES = new Integer[] { 5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5 }; // sum up to 100
 
     private final List<TestCase> TEST_CASES = createTestCases();
 
@@ -46,16 +46,61 @@ public class EvaluationService {
         TestCase testCase3 = new TestCase();
         TestCase testCase4 = new TestCase();
         TestCase testCase5 = new TestCase();
+        TestCase testCase6 = new TestCase();
+        TestCase testCase7 = new TestCase();
+        TestCase testCase8 = new TestCase();
+        TestCase testCase9 = new TestCase();
+        TestCase testCase10 = new TestCase();
+        TestCase testCase11 = new TestCase();
+        TestCase testCase12 = new TestCase();
+        TestCase testCase13 = new TestCase();
+        TestCase testCase14 = new TestCase();
+        TestCase testCase15 = new TestCase();
+        TestCase testCase16 = new TestCase();
+        TestCase testCase17 = new TestCase();
+        TestCase testCase18 = new TestCase();
+        TestCase testCase19 = new TestCase();
+        TestCase testCase20 = new TestCase();
         testCase1.setMonsters(new int[] {1,2,3,0,2});
         testCase2.setMonsters(new int[] {3,1,6,1,2,4});
         testCase3.setMonsters(new int[] {1});
-        testCase4.setMonsters(new int[] {143,144,145,1,899,900});
-        testCase5.setMonsters(new int[] {500,600,700,1,4,10,201,203});
-        testCases.add(testCase1); // 3
-        testCases.add(testCase2); // 7
-        testCases.add(testCase3); // 0
-        testCases.add(testCase4); // 900
-        testCases.add(testCase5); //399
+        testCase4.setMonsters(new int[] {1,2});
+        testCase5.setMonsters(new int[] {1,2,4});
+        testCase6.setMonsters(new int[] {1,4,2});
+        testCase7.setMonsters(new int[] {2,1,4});
+        testCase8.setMonsters(new int[] {4,1,2});
+        testCase9.setMonsters(new int[] {9,4,2,1,45,21,43});
+        testCase10.setMonsters(new int[] {1,9,8,15,2,3,58});
+        testCase11.setMonsters(new int[] {239,248,294,294,499,28,589,923,394,295,58});
+        testCase12.setMonsters(new int[] {143,144,145,1,899,900});
+        testCase13.setMonsters(new int[] {500,600,700,1,4,10,201,203});
+        testCase14.setMonsters(new int[] {5,4,3,2,1});
+        testCase15.setMonsters(new int[] {500,600,700,1,4,10,201});
+        testCase16.setMonsters(new int[] {500,1,4,10,201});
+        testCase17.setMonsters(new int[] {500,600,700,1,4});
+        testCase18.setMonsters(new int[] {500,600,1,4,10});
+        testCase19.setMonsters(new int[] {1,1000,2,988,3,999});
+        testCase20.setMonsters(new int[] {0,900,0,999,0,998});
+        testCases.add(testCase1); 
+        testCases.add(testCase2); 
+        testCases.add(testCase3); 
+        testCases.add(testCase4); 
+        testCases.add(testCase5); 
+        testCases.add(testCase6); 
+        testCases.add(testCase7); 
+        testCases.add(testCase8); 
+        testCases.add(testCase9); 
+        testCases.add(testCase10); 
+        testCases.add(testCase11); 
+        testCases.add(testCase12); 
+        testCases.add(testCase13); 
+        testCases.add(testCase14); 
+        testCases.add(testCase15); 
+        testCases.add(testCase16); 
+        testCases.add(testCase17); 
+        testCases.add(testCase18); 
+        testCases.add(testCase19); 
+        testCases.add(testCase20); 
 
         return testCases;
     }
