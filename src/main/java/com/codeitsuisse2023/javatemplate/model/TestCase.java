@@ -5,15 +5,15 @@ import java.util.stream.IntStream;
 
 // TODO: change this class based on expected JSON payload to send to participant teams
 public class TestCase {
-    @JsonProperty("hunts")
-    private int[] hunts;
+    @JsonProperty("monsters")
+    private int[] monsters;
 
-    public int[] getHunts() {
-        return hunts;
+    public int[] getMonsters() {
+        return monsters;
     }
 
-    public void setHunts(int[] huntArray) {
-        this.hunts = new int[huntArray.length];
-        IntStream.range(0, hunts.length).forEach(i -> hunts[i] = huntArray[i]);
+    public void setMonsters(int[] monstersArray) {
+        this.monsters = new int[monstersArray.length];
+        IntStream.range(0, monsters.length).forEach(i -> monsters[i] = monstersArray[i]);
     }
 }

@@ -46,11 +46,11 @@ public class EvaluationService {
         TestCase testCase3 = new TestCase();
         TestCase testCase4 = new TestCase();
         TestCase testCase5 = new TestCase();
-        testCase1.setHunts(new int[] {1,2,3,0,2});
-        testCase2.setHunts(new int[] {3,1,6,1,2,4});
-        testCase3.setHunts(new int[] {1});
-        testCase4.setHunts(new int[] {143,144,145,1,899,900});
-        testCase5.setHunts(new int[] {500,600,700,1,4,10,201,203});
+        testCase1.setMonsters(new int[] {1,2,3,0,2});
+        testCase2.setMonsters(new int[] {3,1,6,1,2,4});
+        testCase3.setMonsters(new int[] {1});
+        testCase4.setMonsters(new int[] {143,144,145,1,899,900});
+        testCase5.setMonsters(new int[] {500,600,700,1,4,10,201,203});
         testCases.add(testCase1); // 3
         testCases.add(testCase2); // 7
         testCases.add(testCase3); // 0
@@ -175,7 +175,7 @@ public class EvaluationService {
 
     // TODO: implement computing of solution based on test case
     private TeamSolution computeSolution(TestCase testCase) {
-        int[] hunts = testCase.getHunts();
+        int[] hunts = testCase.getMonsters();
         int numOfHunts = hunts.length;
         int numOfStates = 3;
         long[][] huntArray = new long[numOfHunts][numOfStates];
@@ -190,7 +190,7 @@ public class EvaluationService {
 
         long efficientHuntCount = huntArray[numOfHunts-1][1];
         TeamSolution teamSolutions = new TeamSolution();
-        teamSolutions.setValue(efficientHuntCount);
+        teamSolutions.setEfficiency(efficientHuntCount);
         return teamSolutions;
     }
 

@@ -4,15 +4,15 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 // TODO: change this class based on expected JSON payload received from participant teams
 public class TeamSolution {
-    @JsonProperty("value")
-    private long value;
+    @JsonProperty("efficiency")
+    private long efficiency;
 
-    public long getValue() {
-        return value;
+    public long getEfficiency() {
+        return efficiency;
     }
 
-    public void setValue(long value) {
-        this.value = value;
+    public void setEfficiency(long efficiency) {
+        this.efficiency = efficiency;
     }
 
     // TODO: update this accordingly
@@ -21,7 +21,7 @@ public class TeamSolution {
         if (!(obj instanceof TeamSolution)) {
             return false;
         } else {
-            return this.value == ((TeamSolution) obj).value;
+            return this.efficiency == ((TeamSolution) obj).efficiency;
         }
     }
 }

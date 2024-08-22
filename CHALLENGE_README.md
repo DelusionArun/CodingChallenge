@@ -42,20 +42,20 @@ Kazuma's goal is to earn money. To make things simple, let's assume that he need
 
 He is not concerned about monsters missed in defend state because he did not need to spend money on potions on defend move. So, as far as he is concerned, defend is a neutral state where he neither gained nor lost anything. 
 
-So, Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to recover MP and attack.
+So, Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to recover MP and attack. He wants to attack when the number of monsters is high while recovering MP when number of monsters are low.
 
 Help Kazuma find the most efficient number of monsters he can defeat in a given expedition!
 
 ### Explanation:
 <pre>
-For example, consider an input array as [1,2,3,0,2]
+For example, consider an input array as [1,4,5,0,4]
 
 You will read this as:
 Monster Count in Time t0: 1
-Monster Count in Time t1: 2
-Monster Count in Time t2: 3
+Monster Count in Time t1: 4
+Monster Count in Time t2: 5
 Monster Count in Time t3: 0 
-Monster Count in Time t4: 2
+Monster Count in Time t4: 4
 
 If Kazuma wants to defeat the highest number of monsters he can while minimizing his cost, his ideal move will be to try to maximize the number of monsters he can defeat with attack while trying to minimize the number of monsters he misses while recovering mana.
 
@@ -64,7 +64,7 @@ For above case, one of his ideal moves would be to:
 | t0      | t1     | t2     | t3      | t4    |
 | Recover | Attack | Defend | Recover | Attack|
 
-Which would lead his to defeat 4 monsters at the cost of missing one, leading to a "profitable" hunt of (2-1) + (2-0) = 3 monsters
+Which would lead his to defeat 7 monsters at the cost of missing one, leading to a "profitable" hunt of (4-1) + (4-0) = 7 monsters
 </pre>
 
 
@@ -77,7 +77,7 @@ Expected request mime-type: `application/json`
 Expected response mime-type: `application/json`
 
 
-#### Expected Input
+#### Expected Input Sample 1
 
 Every test case will have the following format:
 
@@ -86,17 +86,65 @@ Monster Number
 <pre>
 [
     {
-      "monster_count": [1, 2, 3, 0, 2]
+      "monster_count": [1, 4, 5, 0, 4]
     }
 ]
 </pre>
 
-#### Expected Output
+#### Expected Output Sample 1
 
 <pre>
 [
     {
-        "hunts": 3
+        "efficiency": 7
+    }
+]
+</pre>
+
+#### Expected Input Sample 2
+
+Every test case will have the following format:
+
+Monster Number
+
+<pre>
+[
+    {
+      "monster_count": [1]
+    }
+]
+</pre>
+
+#### Expected Output Sample 2
+
+<pre>
+[
+    {
+        "efficiency": 0
+    }
+]
+</pre>
+
+#### Expected Input Sample 3
+
+Every test case will have the following format:
+
+Monster Number
+
+<pre>
+[
+    {
+      "monsters": [1,100,340,210,1,4,530]
+    }
+]
+</pre>
+
+#### Expected Output Sample 3
+
+<pre>
+[
+    {
+        "efficiency": 868
     }
 ]
 </pre>
