@@ -84,7 +84,9 @@ Expected response mime-type: `application/json`
 
 Refer to below samples for input and output format:
 
-#### Expected Input Sample 1
+#### Sample 1
+
+Expected Input:
 
 <pre>
 [
@@ -94,7 +96,7 @@ Refer to below samples for input and output format:
 ]
 </pre>
 
-#### Expected Output Sample 1
+Expected Output:
 
 <pre>
 [
@@ -104,7 +106,9 @@ Refer to below samples for input and output format:
 ]
 </pre>
 
-#### Expected Input Sample 2
+#### Sample 2
+
+Expected Input:
 
 <pre>
 [
@@ -117,7 +121,7 @@ Refer to below samples for input and output format:
 ]
 </pre>
 
-#### Expected Output Sample 2
+Expected Output:
 
 <pre>
 [
@@ -130,7 +134,7 @@ Refer to below samples for input and output format:
 ]
 </pre>
 
-### Summary
+### Summary 
 
 1. The end goal for Kazuma is to find the most efficient way to defeat monsters. 
 2. The number of monsters is variable at different times. 
@@ -138,3 +142,5 @@ Refer to below samples for input and output format:
 4. After attack, Kazuma changes to a cooldown state. 
 5. Once he uses attack, all the monsters at that time will be defeated. 
 6. Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to recover MP and attack.
+
+### Have a Great Adventure!  ⸜(｡˃ ᵕ ˂)⸝♡
