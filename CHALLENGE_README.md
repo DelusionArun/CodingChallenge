@@ -26,6 +26,8 @@ We would present this as [3, 5, 2].
 
 </pre>
 
+### Specifics:
+
 Kazuma possesses an Area of Effect spell that can defeat all the monsters in time it was applied. But once he uses the spell, he cannot use the spell in the next time sequence and since this move requires a lot of mana, he needs to drink a potion before activating the spell.
 
 So, Kazuma can have four possible states in each time tX: 
@@ -53,12 +55,12 @@ For example, consider an input array as
 [1,4,5,0,4]
 </pre>
 
-You will read this as:
-Monster Count in Time t0: 1
-Monster Count in Time t1: 4
-Monster Count in Time t2: 5
-Monster Count in Time t3: 0 
-Monster Count in Time t4: 4
+You will read this as: <br />
+Monster Count in Time t0: 1 <br />
+Monster Count in Time t1: 4 <br />
+Monster Count in Time t2: 5 <br />
+Monster Count in Time t3: 0 <br />
+Monster Count in Time t4: 4 <br />
 
 If Kazuma wants to defeat the highest number of monsters he can while minimizing his cost, his ideal move will be to try to maximize the number of monsters he can defeat with attack while trying to minimize the number of monsters he misses while recovering mana.
 
