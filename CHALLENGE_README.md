@@ -47,8 +47,11 @@ So, Kazuma measures efficiency as the number of monsters he could defeat by choo
 Help Kazuma find the most efficient number of monsters he can defeat in a given expedition!
 
 ### Explanation:
+
+For example, consider an input array as 
 <pre>
-For example, consider an input array as [1,4,5,0,4]
+[1,4,5,0,4]
+</pre>
 
 You will read this as:
 Monster Count in Time t0: 1
@@ -60,12 +63,13 @@ Monster Count in Time t4: 4
 If Kazuma wants to defeat the highest number of monsters he can while minimizing his cost, his ideal move will be to try to maximize the number of monsters he can defeat with attack while trying to minimize the number of monsters he misses while recovering mana.
 
 For above case, one of his ideal moves would be to:
-
+<pre>
 | t0      | t1     | t2     | t3      | t4    |
 | Recover | Attack | Defend | Recover | Attack|
-
-Which would lead his to defeat 7 monsters at the cost of missing one, leading to a "profitable" hunt of (4-1) + (4-0) = 7 monsters
 </pre>
+
+Which would lead him to defeat 7 monsters at the cost of missing one, leading to a "efficient" hunt of (4-1) + (4-0) = 7 monsters
+
 
 
 ### Submission Method
@@ -76,12 +80,9 @@ Expected request mime-type: `application/json`
 
 Expected response mime-type: `application/json`
 
+Refer to below samples for input and output format:
 
 #### Expected Input Sample 1
-
-Every test case will have the following format:
-
-Monster Number
 
 <pre>
 [
@@ -102,10 +103,6 @@ Monster Number
 </pre>
 
 #### Expected Input Sample 2
-
-Every test case will have the following format:
-
-Monster Number
 
 <pre>
 [
