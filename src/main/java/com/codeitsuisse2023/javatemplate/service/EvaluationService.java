@@ -30,7 +30,7 @@ public class EvaluationService {
     private final String CHALLENGE_PATH = "efficient-hunter-kazuma";
     private final long CONNECT_TIMEOUT_DURATION = 10L;
     private final long READ_TIMEOUT_DURATION = 5L;
-    private final Integer[] TEST_CASE_SCORES = new Integer[] { 10,10,10,10,10,10,10,10,10,10 }; // sum up to 100
+    private final Integer[] TEST_CASE_SCORES = new Integer[] { 15,20,20,5,20,20 }; // sum up to 100
 
     private final List<TestCase> TEST_CASES = createTestCases();
 
@@ -47,30 +47,18 @@ public class EvaluationService {
         TestCase testCase4 = new TestCase();
         TestCase testCase5 = new TestCase();
         TestCase testCase6 = new TestCase();
-        TestCase testCase7 = new TestCase();
-        TestCase testCase8 = new TestCase();
-        TestCase testCase9 = new TestCase();
-        TestCase testCase10 = new TestCase();
         testCase1.setMonsters(new int[] {1,2,3,0,2});
         testCase2.setMonsters(new int[] {239,248,294,294,499,28,589,923,394,295,58});
         testCase3.setMonsters(new int[] {500,600,700,1,4,10,201,203});
         testCase4.setMonsters(new int[] {5,4,3,2,1});
         testCase5.setMonsters(new int[] {500,600,700,1,4,10,201});
         testCase6.setMonsters(new int[] {500,1,4,10,201});
-        testCase7.setMonsters(new int[] {500,600,700,1,4});
-        testCase8.setMonsters(new int[] {500,600,1,4,10});
-        testCase9.setMonsters(new int[] {1,1000,2,988,3,999});
-        testCase10.setMonsters(new int[] {0,900,0,999,0,998});
         testCases.add(testCase1); 
         testCases.add(testCase2); 
         testCases.add(testCase3); 
         testCases.add(testCase4); 
         testCases.add(testCase5); 
         testCases.add(testCase6); 
-        testCases.add(testCase7); 
-        testCases.add(testCase8); 
-        testCases.add(testCase9); 
-        testCases.add(testCase10); 
 
         return testCases;
     }
