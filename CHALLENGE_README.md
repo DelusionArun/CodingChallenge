@@ -70,7 +70,7 @@ For above case, one of his ideal moves would be to:
 | Recover | Attack | Defend | Recover | Attack|
 </pre>
 
-Which would lead him to defeat 7 monsters at the cost of missing one, leading to a "efficient" hunt of (4-1) + (4-0) = 7 monsters
+Which would lead him to defeat 8 monsters at the cost of missing one, leading to a "efficient" hunt of (4-1) + (4-0) = 7 monsters
 
 
 
