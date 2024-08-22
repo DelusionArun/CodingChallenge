@@ -86,7 +86,7 @@ Monster Number
 <pre>
 [
     {
-      "monsters": [1, 4, 5, 0, 4]
+      "monsters": [1,4,5,0,4]
     }
 ]
 </pre>
