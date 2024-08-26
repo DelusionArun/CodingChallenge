@@ -66,8 +66,8 @@ If Kazuma wants to defeat the highest number of monsters he can while minimizing
 
 For above case, one of his ideal moves would be to:
 <pre>
-| t0      | t1     | t2     | t3      | t4    |
-| Recover | Attack | Defend | Recover | Attack|
+| t0      | t1     | t2                | t3      | t4    |
+| Recover | Attack | Defend (Cooldown) | Recover | Attack|
 </pre>
 
 Which would lead him to defeat 8 monsters at the cost of missing one, leading to a "efficient" hunt of (4-1) + (4-0) = 7 monsters
