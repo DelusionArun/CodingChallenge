@@ -42,7 +42,7 @@ So, Kazuma can have three possible actions in each time tX:
 
 <pre> Prepare Transmutation Circle, Attack, Move to Rear </pre>
 
-Kazuma joined the hunting expedition with the hope of earning the riches promised by the Obarskyr of Cormyr. Hence, he measures the efficiency of his monster hunts as the number of gold he earned while on expedition.
+Kazuma joined the hunting expedition with the hope of earning the riches promised by the Obarskyr royal family of Cormyr. Hence, he measures the efficiency of his monster hunts as the amount of gold he earned while on expedition.
 
 Help Kazuma become an efficient monster hunter!
 
