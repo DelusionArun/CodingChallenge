@@ -42,7 +42,7 @@ So, Kazuma can have three possible actions in each time tX:
 
 <pre> Prepare Transmutation Circle, Attack, Move to Rear </pre>
 
-Kazuma measures the efficiency of his monster hunts as the number of gold he earned while on expedition.
+Kazuma joined the hunting expedition with the hope of earning the riches promised by the Obarskyr of Cormyr. Hence, he measures the efficiency of his monster hunts as the number of gold he earned while on expedition.
 
 Help Kazuma find the most efficient strategy to earn gold in a given expedition!
 
@@ -76,7 +76,7 @@ Had the input array instead been
 [5,4,3,2,1]
 </pre>
 
-Then, Kazuma would not have drawn a transmutation circle because it would not have been "efficient" to do so. His ideal move in this scenario would just be to not go to the frontline.
+Then, Kazuma would not have drawn a transmutation circle because it would not have been "efficient" to do so. His ideal move in this scenario would be to just not go to the frontline.
 
 <pre>
 | t0             | t1             | t2                | t3            | t4           |
