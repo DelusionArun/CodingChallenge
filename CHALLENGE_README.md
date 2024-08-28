@@ -30,7 +30,7 @@ We would present this as [3, 5, 2].
 
 ### Specifics: 
 
-Kazuma has an Area of Effect attack that can defeat all the monsters in time it was applied. But before he can use this attack, he must prepare a transmutation circle in the field to transmute his mana into the attack spell. 
+Kazuma has an Area of Effect attack that can defeat all the monsters in time it was applied. But before he can use this attack, he must prepare a transmutation circle in the field to transmute his mana into the attack spell. The circle disappears after the attack. 
 
 The transmutation circle is the pre-requisite for Attack. But Kazuma doesn't need to attack immediately after drawing the circle. He can move to the backline until he finds a good opportunity to attack. After attacking, Kazuma immediately moves back to the rear to recover MP (Mana Points) at t+1, where t is the time of attack.
 
