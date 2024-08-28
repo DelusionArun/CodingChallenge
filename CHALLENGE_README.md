@@ -14,6 +14,8 @@ It is possible for monsters of other fronts to be in his range in next time sequ
 
 Similarly, it is possible for others to defeat monsters that are in his range by the next time sequence.
 
+Lucky for him, he possesses a clairvoyant spell that allows him to determine the number of monsters that will appear in each time frame.
+
 ### Explanation:
 <pre>
 For example, consider Kazuma faced 3 monsters in time t0, 5 monsters in time t1, and 2 monsters in time t2.
@@ -26,28 +28,23 @@ We would present this as [3, 5, 2].
 
 </pre>
 
-### Specifics:
+### Specifics: 
 
-Kazuma possesses an Area of Effect spell that can defeat all the monsters in time it was applied. But before he can use this spell, he must complete an incantation chant to activate the spell. 
-In addition, once he uses the spell, he immediately enters a cooldown state to recover MP.
+Kazuma has an Area of Effect attack that can defeat all the monsters in time it was applied. But before he can use this attack, he must prepare a transmutation circle in the field to transmute his mana into the attack spell. 
 
-So, Kazuma can have four possible states in each time tX: 
+The transmutation circle is the pre-requisite for Attack. But Kazuma doesn't need to attack immediately after drawing the circle. He can move to the backline until he finds a good opportunity to attack. After attacking, Kazuma immediately moves back to the rear to recover MP (Mana Points) at t+1, where t is the time of attack.
 
-<pre> Chant, Attack, Recover MP, Defend </pre>
+Since the transmutation circle needs to be drawn on the frontline, Kazuma has an agreement with other adventurers to protect him while he draws the spell. In exchange, he agrees to pay them a standard fee of 1 gold coin for each monster they defeat in addition to what they receive from Cormyr's military.
 
-Chant is the pre-requisite for Attack. But Kazuma doesn't need to attack immediately after chanting. He can continue defending until he finds a good opportunity to attack.
+Cormyr's military offers 1 gold coin for each monster defeated.
 
-In all states other than attack, other adventurers will defeat monsters in the time frame.
+So, Kazuma can have three possible actions in each time tX: 
 
-If Kazuma chooses to attack, all monsters in a time tX are defeated with AOE spell.
+<pre> Prepare Transmutation Circle, Attack, Move to Rear </pre>
 
-Kazuma's goal is to be an efficient hunter and defeat the highest number of monsters with the least effort.
+Kazuma measures the efficiency of his monster hunts as the number of gold he earned while on expedition.
 
-He is not concerned about monsters missed in defend state because he did not need to spend much effort or mana on defend move. So, as far as he is concerned, defend is a neutral state where he neither gained nor lost anything. 
-
-So, Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to chant and attack. He wants to attack when the number of monsters is high while chanting when number of monsters are low.
-
-Help Kazuma find the most efficient number of monsters he can defeat in a given expedition!
+Help Kazuma find the most efficient strategy to earn gold in a given expedition!
 
 ### Explanation:
 
@@ -63,17 +60,30 @@ Monster Count in Time t2: 5 <br />
 Monster Count in Time t3: 0 <br />
 Monster Count in Time t4: 4 <br />
 
-If Kazuma wants to defeat the highest number of monsters he can while minimizing his cost, his ideal move will be to try to maximize the number of monsters he can defeat with attack while trying to minimize the number of monsters he misses while chanting.
+If Kazuma wants to be efficient, he will want to earn more gold than he pays the adventurers. That is, he will only want to draw transmutation circle if he believes it to be efficient to attack at a later time frame.
 
 For above case, one of his ideal moves would be to:
 <pre>
-| t0      | t1       | t2                         | t3      | t4    |
-| Chant   | Attack   | Recover MP (Cooldown)      | Chant   | Attack|
+| t0                             | t1       | t2                           | t3                             | t4     |
+| Prepare Transmutation Circle   | Attack   | Move to rear (Cooldown)      | Prepare Transmutation Circle   | Attack |
 </pre>
 
-Which would lead him to defeat 8 monsters at the cost of missing one, leading to a "efficient" hunt of (4-1) + (4-0) = 7 monsters
+Which would lead him to earn gold coins equivalent to 8 monsters while paying back one gold coin to the adventurers for their protection, leading to an earnings of (4-1) + (4-0) = 7 gold coins
 
 
+Had the input array instead been
+<pre>
+[5,4,3,2,1]
+</pre>
+
+Then, Kazuma would not have drawn a transmutation circle because it would not have been "efficient" to do so. His ideal move in this scenario would just be to not go to the frontline.
+
+<pre>
+| t0             | t1             | t2                | t3            | t4           |
+| Move to rear   | Move to rear   | Move to rear      | Move to rear  | Move to rear |
+</pre>
+
+Any other move would lead him to lose more than he gains, so Kazuma would not consider it efficient.
 
 ### Submission Method
 
@@ -137,12 +147,12 @@ Expected Output:
 
 ### Summary 
 
-1. The end goal for Kazuma is to find the most efficient way to defeat monsters. 
+1. The end goal for Kazuma is to find the most efficient way to earn money. 
 2. The number of monsters is variable at different times. 
-3. Kazuma needs to chant invocation for his attack. 
-4. After attack, Kazuma changes to a cooldown state to recover MP. 
+3. Kazuma needs to draw a transmutation circle to prepare for his attack. 
+4. After attack, Kazuma retreats to the rear/backline to recover MP. 
 5. Once he uses attack, all the monsters at that time will be defeated. 
-6. Kazuma measures efficiency as the number of monsters he could defeat by choosing the best time to chant invocation and attack.
+6. Kazuma measures efficiency as the amount of gold coins he earned.
 
 ### Finally...
 
