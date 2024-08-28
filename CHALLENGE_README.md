@@ -44,7 +44,7 @@ So, Kazuma can have three possible actions in each time tX:
 
 Kazuma joined the hunting expedition with the hope of earning the riches promised by the Obarskyr of Cormyr. Hence, he measures the efficiency of his monster hunts as the number of gold he earned while on expedition.
 
-Help Kazuma find the most efficient strategy to earn gold in a given expedition!
+Help Kazuma become an efficient monster hunter!
 
 ### Explanation:
 
