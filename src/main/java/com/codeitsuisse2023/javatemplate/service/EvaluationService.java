@@ -43,7 +43,7 @@ public class EvaluationService {
 
     private List<TestCase> createTestCases() {
         List<TestCase> testCases = new ArrayList<>();
-        long seed = System.currentTimeMillis();
+        long seed = System.nanoTime();
         Random random = new Random(seed);
         TestCase testCase1 = new TestCase();
         TestCase testCase2 = new TestCase();
