@@ -32,7 +32,9 @@ We would present this as [3, 5, 2].
 
 Kazuma has an Area of Effect attack that can defeat all the monsters in the time it was applied. But before he can use this attack, he must prepare a transmutation circle in the field to transmute his mana into the attack spell. The circle disappears after the attack. 
 
-The transmutation circle is the pre-requisite for Attack. These circles cannot be stacked (i.e., he must attack before he can draw another circle). But Kazuma doesn't need to attack immediately after drawing the circle. He can move to the backline until he finds a good opportunity to attack. After attacking, Kazuma immediately moves back to the rear to recover MP (Mana Points) at t+1, where t is the time of attack. 
+The transmutation circle is the pre-requisite for Attack. These circles cannot be stacked (i.e., he must attack before he can draw another circle). But Kazuma doesn't need to attack immediately after drawing the circle. He can move to the backline until he finds a good opportunity to attack. 
+
+After attacking, Kazuma immediately moves back to the rear to recover MP (Mana Points) at t+1, where t is the time of attack. 
 
 Since the transmutation circle needs to be drawn on the frontline, Kazuma has an agreement with other adventurers to protect him while he draws the spell. In exchange, he agrees to pay them a standard fee of 1 gold coin for each monster they defeat in addition to what they receive from Cormyr's military.
 
@@ -150,7 +152,7 @@ Expected Output:
 1. The end goal for Kazuma is to find the most efficient way to earn money. 
 2. The number of monsters is variable at different times. 
 3. Kazuma needs to draw a transmutation circle to prepare for his attack. 
-4. After attack, Kazuma retreats to the rear/backline to recover MP. 
+4. After attack at time t, Kazuma must immediately retreat to the rear/backline to recover MP at t+1. 
 5. Once he uses attack, all the monsters at that time will be defeated. 
 6. Kazuma measures efficiency as the amount of gold coins he earned.
 
