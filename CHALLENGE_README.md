@@ -78,7 +78,7 @@ Had the input array instead been
 [5,4,3,2,1]
 </pre>
 
-Then, Kazuma would not have drawn a transmutation circle because it would not have been "efficient" to do so. His ideal move in this scenario would be to just not go to the frontline.
+Then, Kazuma would not have drawn a transmutation circle because it would have cost him more to hire the adventurers to protect him than he could potentially earn. Hence, it would not have been "efficient" for him to do so. His ideal move in this scenario would be to just not go to the frontline.
 
 <pre>
 | t0             | t1             | t2                | t3            | t4           |
